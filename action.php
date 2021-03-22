@@ -1,22 +1,32 @@
 <?php
-    /*include 'connect.php';*/
+$server = 'cjm-capstonedb.c9glmfvid2ev.us-east-1.rds.amazonaws.com';
+$username = 'CJM00948910';
+$password = '1Eyeball';
+$dbname = 'Capstone';
+
+$conn = mysqli_connect($server, $username, $password, $dbname);
+
+if (isset($_POST['submit'])) {
     
-    $mysqli = mysqli_connect('cjm-capstonedb.c9glmfvid2ev.us-east-1.rds.amazonaws.com', 'CJM00948910', '1Eyeball', 'Capstone', '3306');
-
-    if ($mysqli == false) {
-        die("ERROR: Could not connect. " .mysqli_connect_error());
+    if (!empty($_POST['content']) && !empty($_POST['email'])) {
+        
+        $content = $_POST['content'];
+        $email = $_POST['email'];
+        
+        $query = "insert into questions(content,email) values('$content', '$email')";
+        
+        $run = mysqli_query($conn,$query) or die(mysqli_error());
+        
+        if($run) {
+            echo "form submitted successfully";
+        }
+        else {
+            echo "Form not submitted"
+        }
     }
-
-    $content = mysqli_real_escape_string($mysqli, $_POST['content']);
-    $email = mysqli_real_escape_string($mysqli, $_POST['email']);
-
-    $sql = "INSERT INTO questions (content, email) VALUES ('$content', '$email')";
-    if (mysqli_query($mysqli, $sql)) {
-        echo "Records added successfully.";
-    } else {
-        echo "ERROR: Could not execute to $sql.".
-    mysqli_error($mysqli);
+    else {
+        echo "all fields required";
     }
-    
-    mysqli_close($mysqli);
+}
+
 ?>
