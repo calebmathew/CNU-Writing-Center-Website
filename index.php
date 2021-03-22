@@ -38,10 +38,10 @@
         <form action="insert.php" method="post">
             <br>
             <label for='text'>Quick question? Ask Us!</label><br>
-            <input type='text' id='text' name='content' size="35"><br>
+            <input type='text' name='content' size="35"><br>
             <label for='email'>E-mail Address:</label><br>
-            <input type='email' id='email' name='email'><br><br>
-            <input type='submit' id='submit' name='submit'>
+            <input type='email' name='email'><br><br>
+            <input type='submit' name='submit'>
             <br><br>
         </form>
         </div>
