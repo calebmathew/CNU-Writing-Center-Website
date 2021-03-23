@@ -10,12 +10,12 @@ if (isset($_POST['submit'])) {
     
     if (!empty($_POST['content']) && !empty($_POST['email'])) {
         
-        $content = mysqli_real_escape_string($conn, $_POST['content']);
-        $email = mysqli_real_escape_string($conn, $_POST['email']);
+        $content = $_POST['content'];
+        $email = $_POST['email'];
         
-        $query = "insert into questions(content,email) values('$content', '$email')";
+        $query = "insert into questions (content, email) values('$content', '$email')";
         
-        $run = mysqli_query($conn,$query) or die(mysqli_error());
+        $run = mysqli_query($conn, $query) or die(mysqli_error());
         
         if($run) {
             echo "form submitted successfully";
