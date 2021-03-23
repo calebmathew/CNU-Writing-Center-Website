@@ -1,3 +1,4 @@
+<?php include 'connect.php'; ?>
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -23,8 +24,6 @@
     </header>
     <div class="container">
 <?php
-
-$conn = mysqli_connect('cjm-capstonedb.c9glmfvid2ev.us-east-1.rds.amazonaws.com', 'CJM00948910', '1Eyeball', 'Capstone', '3306');
 
 if (isset($_POST['submit'])) {
     
