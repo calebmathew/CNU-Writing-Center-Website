@@ -6,6 +6,6 @@ if ($mysqli->connect_error) {
 }
 else {
     echo 'connected successfully';
-    mysqli_close($mysqli)
+    mysqli_close($mysqli);
 }
 ?>
