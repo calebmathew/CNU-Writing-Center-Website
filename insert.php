@@ -9,9 +9,9 @@
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="125" height="70" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="125" height="70" style="float: left" alt="CNU Logo" />
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
 		    <li><a href="about.html">About Us</a></li>
             <li><a href="resources.html">Resources</a></li>
             <li><a href="training.html">Consultant Training</a></li>
