@@ -28,5 +28,5 @@ if (isset($_POST['submit'])) {
         echo "all fields required";
     }
 }
-mysqli_close($conn)
+mysqli_close($conn);
 ?>
