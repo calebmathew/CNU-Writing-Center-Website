@@ -1,6 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['loggedin'])) {
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE) {
+    echo 'Welcome back, ' . $_SESSION['name'] . "!";
+}
+else {
     header('Location: index.php');
     exit;
 }
