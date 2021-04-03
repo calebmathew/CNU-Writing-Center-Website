@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
