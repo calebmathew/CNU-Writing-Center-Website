@@ -25,6 +25,7 @@
             <li><a href="resources.html">Resources</a></li>
             <li><a href="training.html">Training</a></li>
             <li><a href="tidewater.html">Events</a></li>
+            <li><a href="login.php">For Staff</a></li>
         </ul>
     </nav>
     <header>
