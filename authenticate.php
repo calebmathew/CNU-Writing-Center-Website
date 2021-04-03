@@ -23,7 +23,7 @@
             <li><a href="tidewater.html">Events</a></li>
         </ul>
     </nav>
-    <div class="containter">
+    <div class="container">
 <?php
         
 if ( !isset($_POST['username'], $_POST['password'])) {
