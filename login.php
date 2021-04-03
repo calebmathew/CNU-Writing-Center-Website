@@ -1,9 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION['loggedin'])) {
-    header('Location: staff.php');
-    exit;
-}
 <!DOCTYPE html>
 <html lang='en'>
 <head>
