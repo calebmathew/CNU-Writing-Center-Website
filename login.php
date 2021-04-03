@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['loggedin'])) {
+    header('Location: staff.php');
+    exit;
+}
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -11,7 +17,7 @@
 </head>
 <body>
     <nav>
-        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <ul>
             <li><a href="index.php">Home</a></li>
 		    <li><a href="about.html">About Us</a></li>
