@@ -18,7 +18,7 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <a href="logout.php"><i style="float: right" class="fas fa-sign-out-alt"></i>Logout</a>
         <ul>
             <li><a href="index.php">Home</a></li>
