@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <ul>
             <li><a href="index.php">Home</a></li>
 		    <li><a href="about.html">About Us</a></li>
