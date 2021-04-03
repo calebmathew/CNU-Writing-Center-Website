@@ -24,7 +24,7 @@
     <main>
         <div class="login">
             <h3>Login</h3>
-            <form action="autheticate.php" method="post">
+            <form action="authenticate.php" method="post">
                 <label for="username">
                     <i class="fas fa-user"></i>
                 </label>
