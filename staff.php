@@ -1,11 +1,9 @@
+<?php include 'authenticate.php'; ?>
 <?php
 session_start();
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == TRUE) {
-    echo 'Welcome back, ' . $_SESSION['name'] . "!";
-}
-else {
-    header('Location: index.php');
-    exit;
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: index.php');
+	exit;
 }
 ?>
 <!DOCTYPE html>
@@ -21,7 +19,7 @@ else {
 </head>
 <body>
     <nav>
-        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <a href="logout.php"><i style="float: right" class="fas fa-sign-out-alt"></i>Logout</a>
         <ul>
             <li><a href="index.php">Home</a></li>
@@ -29,7 +27,7 @@ else {
             <li><a href="resources.html">Resources</a></li>
             <li><a href="training.html">Consultant Training</a></li>
             <li><a href="tidewater.html">Events</a></li>
-            <li><a href="login.html">For Staff</a></li>
+            <li><a href="login.php">For Staff</a></li>
         </ul>
     </nav>
      <header>
