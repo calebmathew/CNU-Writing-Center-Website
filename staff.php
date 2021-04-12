@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
             <li><a href="resources.html">Resources</a></li>
             <li><a href="training.html">Consultant Training</a></li>
             <li><a href="tidewater.html">Events</a></li>
-            <li><a href="login.php">For Staff</a></li>
+            <li><a href="login.html">For Staff</a></li>
         </ul>
     </nav>
     <main>
