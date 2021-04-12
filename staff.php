@@ -1,4 +1,3 @@
-<?php include 'connect.php'; ?>
 <?php
 session_start();
 if (!isset($_SESSION['loggedin'])) {
@@ -20,7 +19,6 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
     <nav>
         <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
-        <a href="logout.php"><i style="float: right" class="fas fa-sign-out-alt"></i>Logout</a>
         <ul>
             <li><a href="index.php">Home</a></li>
 		    <li><a href="about.html">About Us</a></li>
@@ -35,7 +33,7 @@ if (!isset($_SESSION['loggedin'])) {
     </header>
     <main>
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
-        <br>
+    </main>
         <div class="container">
             <table align='center'>
                 <tr>
@@ -44,27 +42,21 @@ if (!isset($_SESSION['loggedin'])) {
                 
                 <?php 
                         $query = 'SELECT content, email FROM questions';
-                        $run = mysqli_query($conn, $query) or die(mysqli_error());
-            
-                        if($run) {
-                            while($row = $run->fetch_assoc()) {
-                                $content = $row['content'];
-                                $email = $row['email'];
+                        $run = $conn->query($query);
+                        while($row = $run->fetch_assoc()) {
+                            $content = $row['content'];
+                            $email = $row['email'];
                                 
-                                echo "<tr>
-                                <td align='center'>$content</td>
-                                <td align='center'>$email</td>
-                                </tr>";
-                            }
-                        } else {
-                            echo "Error displaying table"
-                            mysqli_close($conn);
+                            echo "<tr>
+                            <td align='center'>$content</td>
+                            <td align='center'>$email</td>
+                            </tr>";
                         }
+                        $conn->close();
                 ?>
                 
             </table>
         </div>
-    </main>
     <footer>
         Copyright &copy; CNU Writing Center 2021
     </footer>
