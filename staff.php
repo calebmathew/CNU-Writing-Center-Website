@@ -35,6 +35,35 @@ if (!isset($_SESSION['loggedin'])) {
     </header>
     <main>
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
+        <br>
+        <div class="container">
+            <table align='center'>
+                <tr>
+                    <th>Questions</th><th>Email Address</th>
+                </tr>
+                
+                <?php 
+                        $query = 'SELECT content, email FROM questions';
+                        $run = mysqli_query($conn, $query) or die(mysqli_error());
+            
+                        if($run) {
+                            while($row = $run->fetch_assoc()) {
+                                $content = $row['content'];
+                                $email = $row['email'];
+                                
+                                echo "<tr>
+                                <td align='center'>$content</td>
+                                <td align='center'>$email</td>
+                                </tr>";
+                            }
+                        } else {
+                            echo "Error displaying table"
+                            mysqli_close($conn);
+                        }
+                ?>
+                
+            </table>
+        </div>
     </main>
     <footer>
         Copyright &copy; CNU Writing Center 2021
