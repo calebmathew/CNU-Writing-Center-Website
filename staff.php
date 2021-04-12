@@ -19,7 +19,10 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <body>
     <nav>
-        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
+        <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
+        <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
         <ul>
             <li><a href="index.php">Home</a></li>
 		    <li><a href="about.html">About Us</a></li>
@@ -29,13 +32,9 @@ if (!isset($_SESSION['loggedin'])) {
             <li><a href="login.php">For Staff</a></li>
         </ul>
     </nav>
-     <header>
-        <h2>For Staff</h2>
-    </header>
     <main>
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
     </main>
-        <div class="container">
                 <?php 
                         $sql = 'SELECT content, email FROM questions';
                         $result = mysqli_query($conn, $sql);
@@ -48,7 +47,6 @@ if (!isset($_SESSION['loggedin'])) {
                         }
                         mysqli_close($conn);
                 ?>
-        </div>
     <footer>
         Copyright &copy; CNU Writing Center 2021
     </footer>
