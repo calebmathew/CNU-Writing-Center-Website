@@ -35,11 +35,6 @@ if (!isset($_SESSION['loggedin'])) {
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
     </main>
         <div class="container">
-            <table align='center'>
-                <tr>
-                    <th>Questions</th><th>Email Address</th>
-                </tr>
-                
                 <?php 
                         $sql = 'SELECT content, email FROM questions';
                         $result = mysqli_query($conn, $sql);
@@ -52,8 +47,6 @@ if (!isset($_SESSION['loggedin'])) {
                         }
                         mysqli_close($conn);
                 ?>
-                
-            </table>
         </div>
     <footer>
         Copyright &copy; CNU Writing Center 2021
