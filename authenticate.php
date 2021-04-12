@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <img src="pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
+        <img src="images/pic5.png" width="145" height="60" style="float: left" alt="CNU Logo" />
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
@@ -21,11 +21,12 @@
             <li><a href="resources.html">Resources</a></li>
             <li><a href="training.html">Consultant Training</a></li>
             <li><a href="tidewater.html">Events</a></li>
+            <li><a href="login.php">For Staff</a></li>
         </ul>
     </nav>
     <div class="container">
 <?php
-        
+session_start();
 if ( !isset($_POST['username'], $_POST['password'])) {
     exit('Please fill both the username and password fields');
 }
@@ -42,11 +43,12 @@ if ($stmt = $conn->prepare('SELECT id, password FROM account WHERE username = ?'
     
     if ($_POST['password'] === $password) {
         
+        session_regenerate_id();
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['name'] = $_POST['username'];
         $_SESSION['id'] = $id;
         // echo 'Welcome ' . $_SESSION['name'] . '!';
-        header('location: staff.php');
+        header('Location: staff.php');
     } else {
         echo 'Incorrect username and/or password';
     }
