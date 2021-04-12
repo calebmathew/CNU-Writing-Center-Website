@@ -45,8 +45,8 @@ if ($stmt = $conn->prepare('SELECT id, password FROM account WHERE username = ?'
         $_SESSION['loggedin'] = TRUE;
         $_SESSION['name'] = $_POST['username'];
         $_SESSION['id'] = $id;
-        echo 'Welcome ' . $_SESSION['name'] . '!';
-        // header('Location: staff.php');
+        // echo 'Welcome ' . $_SESSION['name'] . '!';
+        header('Location: staff.php');
     } else {
         echo 'Incorrect username and/or password';
     }
