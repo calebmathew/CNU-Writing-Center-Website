@@ -41,18 +41,16 @@ if (!isset($_SESSION['loggedin'])) {
                 </tr>
                 
                 <?php 
-                        $query = 'SELECT content, email FROM questions';
-                        $run = $conn->query($query);
-                        while($row = $run->fetch_assoc()) {
-                            $content = $row['content'];
-                            $email = $row['email'];
-                                
-                            echo "<tr>
-                            <td align='center'>$content</td>
-                            <td align='center'>$email</td>
-                            </tr>";
+                        $sql = 'SELECT content, email FROM questions';
+                        $result = mysqli_query($conn, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                                echo "Content: " . $row['content'] . "Email:" . $row['email'] . "<br>";
+                            }
+                        } else{
+                            echo "0 results";
                         }
-                        $conn->close();
+                        mysqli_close($conn);
                 ?>
                 
             </table>
