@@ -8,45 +8,55 @@
     <link href="capstone.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        .mySlides {display:none;}
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-toggle").dropdown();
+        });
+    </script>
 </head>
 <body>
-    <nav>
-        <img src="pic5.png" style="float: left" alt="CNU Logo" />
-            
+    <nav class="navbar navbar-light">
+        <ul class="nav navbar-nav navbar-center">
+            <li class="active"><a href="index.php">Home</a></li>
+            <li class="active"><a href="about.html">About Us</a></li>
+            <li class="active"><a href="resources.html">Resources</a></li>
+            <li class="active"><a href="events.html">Events</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Other
+                <span class="caret"></span></a>
+                <ul class ="dropdown-menu">
+                    <li><a href="training.html">Consultant Training</a></li>
+                    <li><a href="tidewater.html">Tidewater Community</a></li>
+                    <li><a href="login.html">For Staff</a></li>
+                </ul>
+            </li>
+        </ul>
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-		    <li><a href="about.html">About Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="training.html">Training</a></li>
-            <li><a href="tidewater.html">Events</a></li>
-            <li><a href="login.html">For Staff</a></li>
-        </ul>
+        <img src="pic6.jpeg" style="float: left" alt="CNU Logo" />
     </nav>
     <header>
         <h1>Welcome to the Alice F. Randall Writing Center Webpage!</h1>
+        <h2>Looking forward to seeing you!</h2>
     </header>
     <main>
         <div class="container">
             <br>
             <div class="w3-content w3-display-container">
-            <img class="mySlides" src="pic1.jpg" style="width:100%">
-            <img class="mySlides" src="pic2.jpg" style="width:100%">
-            <img class="mySlides" src="pic3.jpg" style="width:100%">
+            <img class="mySlides" src="images/pic1.jpg" style="width:100%">
+            <img class="mySlides" src="images/pic2.jpg" style="width:100%">
+            <img class="mySlides" src="images/pic3.jpg" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
             <br>
         </div>
+        <script src="slider.js"></script>
         <br>
-
-<script src="slider.js"></script>
         <div class="container">
             <ul>
             <br>
