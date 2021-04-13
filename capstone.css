@@ -8,22 +8,44 @@ nav {
     background-color: white;
 }
 
-nav ul {list-style-type: none;
-		text-align: center;
-		font-size: 1.3em;} 
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3em;
+} 
 		
-nav li {display: inline; }
+nav li {
+    display: inline;
+}
 
-nav a {text-decoration: none;
-		padding: 20px;}
-		
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+	
 nav a:link {color: #002366; }
 nav a:visited {color: #002366; }
 nav a:hover {color: black; }
 
 nav img {
-    width: 145px;
-    height: 60px;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.dropdown-toggle {
+    color: #002366;
 }
 
 h1 {
@@ -203,4 +225,8 @@ footer { color: white;
 .login form input[type="submit"]:hover {
 	background-color: #2868c7;
   	transition: background-color 0.2s;
+}
+
+.mySlides {
+    display: none;
 }
