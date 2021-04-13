@@ -1,7 +1,7 @@
 body {
     background-color: #002366;
 }
-
+/*
 nav {
     font-weight: bold;
     font-size: 20px;
@@ -17,7 +17,7 @@ nav ul {
 nav li {
     display: inline;
 }
-
+*/
 nav a {
     text-decoration: none;
     padding: 20px;
@@ -36,6 +36,12 @@ nav img {
     top: 0;
     text-align: center;
     margin: auto;
+}
+
+.navbar.navbar-light {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
 }
 
 .navbar-nav.navbar-center {
