@@ -126,10 +126,6 @@ footer { color: white;
     margin-bottom: 30px;
 }
 
-.call-to-action table, tr {
-    text-align: center;
-}
-
 .center {
   display: block;
   margin-left: auto;
