@@ -71,6 +71,35 @@ if (!isset($_SESSION['loggedin'])) {
                         mysqli_close($conn);
                 ?>
         </div>
+        <br>
+        <div class="container">
+            <p>Tidewater Survey</p>
+            <?php 
+                    $sql2 = 'SELECT fname, lname, email, content FROM tidewater';
+                    $result2 = mysqli_query($conn, $sql2);
+                    if (mysqli_num_rows($result2) > 0) {
+                        echo "<table>";
+                            echo "<tr>";
+                                echo "<th>Firstname</th>";
+                                echo "<th>Lastname</th>";
+                                echo "<th>Email</th>";
+                                echo "<th>Content</th>";
+                            echo "<tr>";
+                        while($row2 = mysqli_fetch_array($result2)) {
+                            echo "<tr>";
+                                echo "<td>" . $row2['fname'] . "</td>";
+                                echo "<td>" . $row2['lname'] . "</td>";
+                                echo "<td>" . $row2['email'] . "</td>";
+                                echo "<td>" . $row2['content'] . "</td>";
+                            echo "<tr>";
+                        }
+                        echo "</table>";
+                    } else {
+                        echo "0 results";
+                    }
+                    mysqli_close($conn);
+            ?>
+        </div>
     <footer>
         Copyright &copy; CNU Writing Center 2021
     </footer>
