@@ -55,7 +55,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM account WHERE username = ?'
     $stmt->bind_result($id, $password);
     $stmt->fetch();
     
-    if (.md5($_POST['password']) === $password) {
+    if (md5($_POST['password']) === $password) {
         
         session_regenerate_id();
         $_SESSION['loggedin'] = TRUE;
