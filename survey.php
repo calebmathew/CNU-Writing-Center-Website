@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-light">
         <ul class="nav navbar-nav navbar-center">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.php">Home</a></li>
             <li class="active"><a href="about.html">About Us</a></li>
             <li class="active"><a href="resources.html">Resources</a></li>
             <li class="active"><a href="events.html">Events</a></li>
@@ -36,7 +36,7 @@
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
-        <img src="images/pic6.jpeg" style="float: left" alt="CNU Logo" />
+        <img src="pic6.jpeg" style="float: left" alt="CNU Logo" />
     </nav>
     <header>
         <h1>Welcome to the Alice F. Randall Writing Center Webpage!</h1>
