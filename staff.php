@@ -53,7 +53,7 @@ if (!isset($_SESSION['loggedin'])) {
                         $sql = 'SELECT content, email FROM questions';
                         $result = mysqli_query($conn, $sql);
                         if (mysqli_num_rows($result) > 0) {
-                            echo "<table>";
+                            echo "<table cellspacing='15'>";
                                 echo "<tr>";
                                     echo "<th>Content</th>";
                                     echo "<th>Email</th>";
@@ -77,7 +77,7 @@ if (!isset($_SESSION['loggedin'])) {
                     $sql2 = 'SELECT fname, lname, email, content FROM tidewater';
                     $result2 = mysqli_query($conn, $sql2);
                     if (mysqli_num_rows($result2) > 0) {
-                        echo "<table>";
+                        echo "<table cellspacing='15'>";
                             echo "<tr>";
                                 echo "<th>Firstname</th>";
                                 echo "<th>Lastname</th>";
