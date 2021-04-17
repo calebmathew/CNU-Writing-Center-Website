@@ -114,6 +114,10 @@ footer { color: white;
     background-color: white;
 }
 
+.container p {
+    color:#002366;
+}
+
 .call-to-action {
     text-align: center;
 }
