@@ -48,7 +48,6 @@ if (!isset($_SESSION['loggedin'])) {
     <main>
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
     </main>
-        <section class="call-to-action">
         <div class="container">
                 <?php 
                         $sql = 'SELECT content, email FROM questions';
@@ -71,9 +70,7 @@ if (!isset($_SESSION['loggedin'])) {
                         }
                 ?>
         </div>
-        </section>
         <br>
-        <section class="call-to-action">
         <div class="container">
             <p>Tidewater Survey</p>
             <?php 
@@ -102,7 +99,6 @@ if (!isset($_SESSION['loggedin'])) {
                     mysqli_close($conn);
             ?>
         </div>
-        </section>
     <footer>
         Copyright &copy; CNU Writing Center 2021
     </footer>
