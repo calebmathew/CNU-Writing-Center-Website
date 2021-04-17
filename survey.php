@@ -46,7 +46,7 @@
 
 if (isset($_POST['submit'])) {
     
-    if (!empty($_POST['fname']) && !empty($_POST['lname']) && !empty($_POST['email'])) {
+    if (!empty($_POST['fname']) && !empty($_POST['lname']) && !empty($_POST['email']) && !empty($_POST['content'])) {
         
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
