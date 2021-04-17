@@ -68,7 +68,6 @@ if (!isset($_SESSION['loggedin'])) {
                         } else{
                             echo "0 results";
                         }
-                        mysqli_close($conn);
                 ?>
         </div>
         <br>
