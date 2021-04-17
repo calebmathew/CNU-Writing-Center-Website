@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
             mysqli_close($conn);
         }
         else {
-            echo "Form not submitted"
+            echo "Form not submitted";
         }
     }
     else {
