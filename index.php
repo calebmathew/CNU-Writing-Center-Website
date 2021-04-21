@@ -39,10 +39,13 @@
         <a href="index.php"><img src="pic6.jpeg" style="float: left" alt="CNU Logo" /></a>
     </nav>
     <header>
-        <h1>Welcome to the Alice F. Randall Writing Center Webpage!</h1>
-        <h2>Looking forward to seeing you!</h2>
+        <h2>Welcome to the Alice F. Randall Writing Center Webpage!</h2>
     </header>
     <main>
+        <div class="container">
+            <p>Free, friendly writing assistance in all subjects and disciplines, for CNU student-writers of all levels. At the Alice F. Randall Writing Center, we help you better your writing through engaged conversation!</p>
+        </div>
+        <br>
         <div class="container">
             <br>
             <div class="w3-content w3-display-container">
@@ -68,12 +71,27 @@
         </div>
         <br>
         <div class="container">
-            <h4>Location</h4>
-            <h4>Hours</h4>
+            <h4>Fall 2021 Writing Support</h4>
+            <p>The Alice F. Randall Writing Center will offer three appointment options to best meet the needs of all CNU students. These are:</p>
+            <dl>
+                <dt>45-minute in-person appointments</dt>
+                    <dd>Christopher Newport Hall, Suite 124</dd>
+                <dt>60-minute online synchronous appointment</dt>
+                    <dd>Google Meet</dd>
+                <dt>Asynchronous appointments, where consultants spend up to 90 minutes reading and providing written feedback for students</dt>
+            </dl>
         </div>
         <br>
         <div class="container">
-            <h3>Mission Statement</h3>
+            <h4>Fall 2021 Hours</h4>
+            <p>Hours may vary, but generally all in-person and online synchronous appointments are offered during the following times:</p>
+            <dl>
+                <dt>Mondays - Thursdays</dt>
+                    <dd>10am - 8pm</dd>
+                <dt>Fridays</dt>
+                    <dd>10am - 3pm</dd>
+                <dt>Asynchronous appointments taken 7 days/week</dt>
+            </dl>
         </div>
         <br>
         <section class="call-to-action">
