@@ -43,7 +43,7 @@ if (!isset($_SESSION['loggedin'])) {
         <a href="https://www.facebook.com/pg/cnuwritingcenter/about/" class="fa fa-facebook" style="float: right"></a>
         <a href="https://twitter.com/cnuwritingcntr?lang=en" class="fa fa-twitter" style="float: right"></a>
         <a href="https://www.instagram.com/cnuwritingcenter/?hl=en" class="fa fa-instagram" style="float: right"></a>
-        <img src="pic6.jpeg" style="float: left" alt="CNU Logo" />
+        <a href="index.php"><img src="pic6.jpeg" style="float: left" alt="CNU Logo" /></a>
     </nav>
     <main>
         <p>Welcome back, <?=$_SESSION['name']?>!</p>
