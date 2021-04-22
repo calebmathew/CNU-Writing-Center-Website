@@ -61,13 +61,11 @@
         <script src="slider.js"></script>
         <br>
         <div class="container">
-            <ul>
-            <br>
-                <li><a href="https://www.google.com/calendar/selfsched?sstoken=UUFQMVJKVGJla1JGfGRlZmF1bHR8YWE1NDRkODk4NmE2OGY2YTgyMzQ1MmFkYmU1MTkwMTE" class="badge badge-inperson">Schedule an in-person appointment</a></li>
-                <li><a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUdSZ0lXU20wX2hsfGRlZmF1bHR8NTYzYzQxMjk4NDMzY2FlNmI4ZGM4ODJmNjNkODY1YmQ" class="badge badge-synchronous">Schedule a synchronous online appointment</a></li>
-                <li><a href="https://forms.gle/gqTq4Yq4cBMbFYVF6" class="badge badge-asynchronous">Schedule an asynchronous online appointment</a></li>
-            <br>
-            </ul>
+            <h4>Make an appointment</h4>
+                <p>For in-person appointments, please click <a href="https://www.google.com/calendar/selfsched?sstoken=UUFQMVJKVGJla1JGfGRlZmF1bHR8YWE1NDRkODk4NmE2OGY2YTgyMzQ1MmFkYmU1MTkwMTE"><strong>here.</strong></a><p>
+                <p>For online synchronus appointments, please click <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUdSZ0lXU20wX2hsfGRlZmF1bHR8NTYzYzQxMjk4NDMzY2FlNmI4ZGM4ODJmNjNkODY1YmQ"><strong>here.</strong></a></p>
+                <p>For asynchronous appointments, please click <a href="https://forms.gle/gqTq4Yq4cBMbFYVF6"><strong>here.</strong></a></p>
+        <br>
         </div>
         <br>
         <div class="container">
