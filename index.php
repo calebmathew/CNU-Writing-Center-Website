@@ -39,7 +39,7 @@
         <a href="index.php"><img src="pic6.jpeg" style="float: left" alt="CNU Logo" /></a>
     </nav>
     <header>
-        <h2>Welcome to the Alice F. Randall Writing Center Webpage!</h2>
+        <h2>Welcome to the Alice F. Randall Writing Center!</h2>
     </header>
     <main>
         <div class="container">
