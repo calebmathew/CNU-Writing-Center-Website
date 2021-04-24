@@ -76,7 +76,8 @@
                     <dd>Christopher Newport Hall, Suite 124</dd>
                 <dt>60-minute online synchronous appointment</dt>
                     <dd>Google Meet</dd>
-                <dt>Asynchronous appointments, where consultants spend up to 90 minutes reading and providing written feedback for students</dt>
+                <dt>90-minute asynchronous appointment</dt>
+                    <dd>Consultants read and provide written feedback for students</dd>
             </dl>
         </div>
         <br>
@@ -88,7 +89,8 @@
                     <dd>10am - 8pm</dd>
                 <dt>Fridays</dt>
                     <dd>10am - 3pm</dd>
-                <dt>Asynchronous appointments taken 7 days/week</dt>
+                <dt>Asynchronous appointments</dt>
+                    <dd>7 days/week</dd>
             </dl>
         </div>
         <br>
