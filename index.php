@@ -63,7 +63,7 @@
         <div class="container">
             <h4>Make an appointment</h4>
                 <p>For in-person appointments, please click <a href="https://www.google.com/calendar/selfsched?sstoken=UUFQMVJKVGJla1JGfGRlZmF1bHR8YWE1NDRkODk4NmE2OGY2YTgyMzQ1MmFkYmU1MTkwMTE"><strong>here.</strong></a><p>
-                <p>For online synchronus appointments, please click <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUdSZ0lXU20wX2hsfGRlZmF1bHR8NTYzYzQxMjk4NDMzY2FlNmI4ZGM4ODJmNjNkODY1YmQ"><strong>here.</strong></a></p>
+                <p>For online synchronous appointments, please click <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUdSZ0lXU20wX2hsfGRlZmF1bHR8NTYzYzQxMjk4NDMzY2FlNmI4ZGM4ODJmNjNkODY1YmQ"><strong>here.</strong></a></p>
                 <p>For asynchronous appointments, please click <a href="https://forms.gle/gqTq4Yq4cBMbFYVF6"><strong>here.</strong></a></p>
         <br>
         </div>
