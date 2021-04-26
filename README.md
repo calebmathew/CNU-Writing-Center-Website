@@ -7,4 +7,4 @@ Contains:
 - 1 CSS file
 - JS files
 - 5 PHP files
-- images
+- 15 images
