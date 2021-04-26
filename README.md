@@ -6,5 +6,5 @@ Contains:
 - 6 HTML files
 - 1 CSS file
 - JS files
-- PHP files
+- 5 PHP files
 - images
