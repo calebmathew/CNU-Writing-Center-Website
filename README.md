@@ -1,3 +1,10 @@
 # CNU Writing Center Capstone
 
-Attatched are 5 html pages, 1 css page, and 2 images all used to display current website progress.
+Git Repository for Caleb Mathew's Senior Capstone Project - CNU Writing Center Website
+
+Contains:
+- HTML files
+- 1 CSS file
+- JS files
+- PHP files
+- images
