@@ -1,7 +1,7 @@
 body {
     background-color: #002366;
 }
-/*
+
 nav {
     font-weight: bold;
     font-size: 20px;
@@ -17,7 +17,7 @@ nav ul {
 nav li {
     display: inline;
 }
-*/
+
 nav a {
     text-decoration: none;
     padding: 20px;
@@ -45,13 +45,17 @@ nav img {
 }
 
 .navbar-nav.navbar-center {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translatex(-50%);
 }
 
 .dropdown-toggle {
     color: #002366;
+}
+
+.dropdown-menu {
+    text-align: center;
 }
 
 h1 {
